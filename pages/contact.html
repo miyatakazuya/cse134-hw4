@@ -36,22 +36,22 @@
         <fieldset>
           <legend>Contact Information</legend>
           <form-field>
-            <p>Name</p>
+            <label for="name">Name:</label> 
             <input type="text" name="name" id="name" required>
           </form-field>
 
           <form-field>
-            <p>Email</p>
+            <label for="email">Email:</label> 
             <input type="email" name="email" id="email" required>
           </form-field>
 
           <form-field>
-            <p>Comments:</p>
+            <label for="comments">Comments:</label> 
             <textarea name="comments" id="comments" row="4"></textarea>
           </form-field>
 
           <form-field>
-            <p>Preferred Language:</p>
+            <label for="lang">Preferred Language:</label> 
             <select id="lang" name="lang" >
             <optgroup label="Language">x  
               <option value="either">Any</option>
@@ -60,11 +60,7 @@
             </optgroup>
           </select>
           </form-field>
-          
-          <form-field>
-            <input type="hidden" name="possible_bot" value="true">
-          </form-field>
-
+        
           <form-field>
             <button type="submit">Submit</button>
           </form-field>
@@ -76,6 +72,11 @@
           <output id="info" name="info">
             Info:
           </output>
+
+          <form-field>
+            <input type="hidden" name="possible_bot" value="true">
+          </form-field>
+
 
         </fieldset>
       </form> 

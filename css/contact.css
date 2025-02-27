@@ -1,11 +1,25 @@
+form {
+    min-width: 60vw;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
 }
 
-/* Style all required input, textarea, and select fields with a red border */
-input:required,
-textarea:required,
-select:required {
-  border: 2px solid red;
+form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    margin-bottom: 0em;
+}
+
+form-field:has(> input:required) label::after {
+    content: " *";
+    color: red;
+}
+
+  
+output {
+    margin-top: 1em;
 }
