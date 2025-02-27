@@ -1,0 +1,11 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style all required input, textarea, and select fields with a red border */
+input:required,
+textarea:required,
+select:required {
+  border: 2px solid red;
+}

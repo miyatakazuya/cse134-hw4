@@ -30,46 +30,54 @@
       <hr>
   
       <h3>Contact Form:</h3>
-      <p>Please enter your information here<br>Use the <kbd>method</kbd> to specify perferred form of contact.</p>
+      <p>Please enter your information here</p>
   
-      <form action="/submit" method="post">
-  
+      <form id="contactForm" action="https://httpbin.org/post" method="POST">
         <fieldset>
           <legend>Contact Information</legend>
-          <p>Preferred Language</p>
-          <input type="text" name="language" id="language">
-          <datalist id="lang">
-            <option value="en">English</option>
-            <option value="jpn">Japanese</option>
-          </datalist>
-        </fieldset>
-  
-        <fieldset>
-          <legend>Details</legend>
-          <div>
-            <label for="method">What is your preferred method of contact?</label><br>
-            <select id="method" name="method" >
-              <optgroup label="Email">
-                <option value="asap">ASAP</option>
-                <option value="couple-days">Within a couple days</option>
-                <option value="Whenever">Whenever</option>
-              </optgroup>
-              <optgroup label="Phone">
-                <option value="asap">ASAP</option>
-                <option value="couple-days">Within a couple days</option>
-                <option value="Whenever">Whenever</option>
-              </optgroup>
-            </select>
-          </div>
-          <div>
-            <label for="reason">Reason for contact</label><br>
-            <textarea id="reason" name="reason" ></textarea>
-          </div>
-          <div>
+          <form-field>
+            <p>Name</p>
+            <input type="text" name="name" id="name" required>
+          </form-field>
+
+          <form-field>
+            <p>Email</p>
+            <input type="email" name="email" id="email" required>
+          </form-field>
+
+          <form-field>
+            <p>Comments:</p>
+            <textarea name="comments" id="comments" row="4"></textarea>
+          </form-field>
+
+          <form-field>
+            <p>Preferred Language:</p>
+            <select id="lang" name="lang" >
+            <optgroup label="Language">x  
+              <option value="either">Any</option>
+              <option value="JP">Japanese</option>
+              <option value="EN">English</option>
+            </optgroup>
+          </select>
+          </form-field>
+          
+          <form-field>
+            <input type="hidden" name="possible_bot" value="true">
+          </form-field>
+
+          <form-field>
             <button type="submit">Submit</button>
-          </div>
+          </form-field>
+
+          <output id="error" name="error">
+            Error:
+          </output>
+
+          <output id="info" name="info">
+            Info:
+          </output>
+
         </fieldset>
-        
       </form> 
     </content-body>
     
