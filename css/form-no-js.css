@@ -14,7 +14,7 @@ form-field {
     margin-bottom: 0em;
 }
 
-form-field:has(> input:required) label::after {
+form-field:has(> input:required) label::after, form-field:has(> textarea:required) label::after {
     content: " *";
     color: red;
 }
