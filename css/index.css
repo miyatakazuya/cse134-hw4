@@ -26,32 +26,20 @@ content-body:has(+ h2) {
     font-size: 1.7rem;
 }
 
-@keyframes slow-roll {
-    from {
-      translate: 150vw 0 ;
-      scale: 300% 1;
-    }
-  
-    to {
-      translate: 0 0;
-      scale: 100% 1;
-    }   
-  }
 
 content-body > h1 {
     text-align: center;
-    animation-duration: 1.5s;
-    animation-name: slow-roll;
 }
 
-footer nav {
+ nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
+    margin-bottom: 1em;
+
     
     /* justify-content: center; */
-
     /* display: flex; */
     /* justify-content: end; */
 }
@@ -64,6 +52,7 @@ footer nav {
     background-color: gray;
     border-radius: 10px;
     color: black;
+    margin: 0 10px 0 10px
     /* text-shadow: 1px 1px 1px #fff; */
 }
 

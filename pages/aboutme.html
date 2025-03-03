@@ -10,12 +10,17 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <h1>About Me</h1>
       <a href="../index.html"><button class="main_button">Home</button></a>
       <a href="aboutme.html"><button class="main_button" selected="true">About Me</button></a>
       <a href="projects.html"><button class="main_button">Project</button></a>
       <a href="contact.html"><button class="main_button">Contact</button></a>
+
+      <label class="switch">
+        <input type="checkbox" id="toggleTheme" onclick="toggleTheme()"></input>
+        <span class="slider round"></span>
+      </label>
     </header>
 
     <hr>
@@ -61,5 +66,12 @@
          </a>
       </nav>
     </footer>
+
+    <script src="../scripts/theme.js"></script>
+
+    <script>
+      document.getElementsByClassName("slider")[0].style.display = "block";
+    </script>
+
   </body>
 </html>

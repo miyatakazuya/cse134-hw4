@@ -1,5 +1,7 @@
 form {
     min-width: 60vw;
+    background-color: white;
+    margin-bottom: 3vh;
 }
 
 fieldset {

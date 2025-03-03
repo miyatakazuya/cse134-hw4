@@ -24,6 +24,11 @@
         <a href="/pages/projects.html"><button class="main_button">Project</button></a>
         <a href="/pages/contact.html"><button class="main_button">Contact</button></a>
       </nav>
+
+      <label class="switch">
+        <input type="checkbox" id="toggleTheme" onclick="toggleTheme()"></input>
+        <span class="slider round"></span>
+      </label>
     </content-body>
 
     <hr>
@@ -44,5 +49,13 @@
          </a>
       </nav>
     </footer>
+
+    <script src="../scripts/theme.js"></script>
+
+    <script>
+      document.getElementsByClassName("slider")[0].style.display = "block";
+    </script>
+
+
   </body>
 </html>
