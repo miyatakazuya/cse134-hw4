@@ -31,7 +31,7 @@ content-body > h1 {
     text-align: center;
 }
 
- nav {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
